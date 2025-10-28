@@ -1,0 +1,20 @@
+Transaction : ordres à éxécuter comme un tout
+
+Propriétés :
+
+A - tomic (pannes)
+C - onsistent
+I - solated (concurrence) -> serrializable
+D - urable
+
+start transaction;
+
+update Comptes set solde=solde-100
+where ID = 1234;
+
+update Comptes set solde=solde+100
+where ID = 5678;
+
+commit; //rollback -> aucuns ordres éxécutés
+
+

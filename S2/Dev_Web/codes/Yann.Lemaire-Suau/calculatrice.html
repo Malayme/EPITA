@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculatrice</title>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <h1>Calculatrice</h1>
+        <div class="calculatrice">
+            <input type="number" id="nombre1" placeholder="Nombre 1">
+            <select id="operation">
+                <option value="addition">Addition</option>
+                <option value="soustraction">Soustraction</option>
+                <option value="multiplication">Multiplication</option>
+                <option value="division">Division</option>
+            </select>
+            <input type="number" id="nombre2" placeholder="Nombre 2">
+            <button onclick="calculer()">Calculer</button>
+            <div id="resultat"></div>
+        </div>
+    </body>
+</html>

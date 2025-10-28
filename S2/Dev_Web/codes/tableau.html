@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tableau</title>
+        <style>
+            .tableau {
+                margin: 0 auto;
+                border-collapse: collapse;
+                font-family: Arial, Helvetica, sans-serif;
+                width: 50%;
+                border-radius: 30px;
+                overflow: hidden;
+                table-layout: fixed;
+            }
+            .tableau th, .tableau td{
+                width: 200px;
+                border: 1px solid rgb(160, 156, 156);
+                padding: 8px;
+                background-color: #435dd8;
+                color: white;
+            }
+            .tableau th{
+                padding-top: 12px;
+                padding-bottom: 12px;
+            }
+            .tableau td {
+                position: relative;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="tableau">
+            <thead>
+                <tr>
+                    <th>Prénom</th>
+                    <th>Âge</th>
+                    <th>Études</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                   <td>
+                    <p>Yann</p>
+                   </td> 
+                   <td>
+                    <p>21 ans</p>
+                   </td>
+                   <td>
+                    <p>Cybersécurité</p>
+                   </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

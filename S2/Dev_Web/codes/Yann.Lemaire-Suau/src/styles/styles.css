@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'sdglitchdemo';
+    src: url('../fonts/sdglitchdemo/SDGlitch_Demo.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+  body {
+    font-family: 'sdglitchdemo', sans-serif;
+  }
