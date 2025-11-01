@@ -1,0 +1,22 @@
+ELF & Memory operations
+
+
+
+1. Compile a simple C program
+
+#include <stdio.h>
+#include <unistd.h>
+
+int global_var = 42;
+
+int main() {
+    static int static_var = 100;
+    int local_var = 10;
+    printf("Memory demo!\n");
+    pause();
+    return 0;
+}
+
+2. Inspect the ELF structure
+3. Relate the ELF sections to memory segments
+4. Check memory mappings

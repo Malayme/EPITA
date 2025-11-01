@@ -1,0 +1,9 @@
+**Activity #3 Signals**
+
+1. Create a programs that catches signals (signal.h), you can play with SIGTERM, SIGKILL, SIGUSR1
+
+2. Send different signals with kill commands
+
+3. Use ``SIGALRM`` to stop the program after a defined period of time
+
+4. Optional: look at ``sigaction``

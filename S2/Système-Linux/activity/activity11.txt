@@ -1,0 +1,9 @@
+Scheduling
+
+1. Write a CPU-bound task
+2. Write an IO bound task
+3. Run both in parallel and observe using time command. Also observe using htop or ps
+4. Launch a process and change its priority using 'nice'. Observe CPU usage with top
+5. Change priority dynamically
+6. Run a program with real-time priority and observe (chrt)
+7. Observe if linux is protected against spectre/meltdown

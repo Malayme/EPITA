@@ -1,0 +1,17 @@
+Processes, threads
+
+1. Inspect process with ps. Identify PID, PPID, user, and state of running processes.
+
+2. Inspect process tree, locate systemd
+
+3. Inspect process threads
+
+4.Write a C program that creates multiple threads
+
+5. Run and trace the program
+
+6. What system calls are used to create and manage threads?
+
+7. What happens when pthread_create is called?
+
+8. What happens when pthread_join is called?

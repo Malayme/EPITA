@@ -1,0 +1,12 @@
+ELF & compilation
+1. Use ``readelf`` to look at the ELF header of one the program previously compiled
+2. Do that with another binary
+3. What can be said about the magic number
+4. What is the magic number? Why does it start with `7F 45 4C 46`?
+5. What is the entry point address, and what does it represent?
+6. Use xxd to view the ELF header
+7. Explore section of ELF header
+8. Re-compile the executable that you look at with -static
+9. Compare it with ``ls -lh``
+10. Observe both binaries with ``ldd``
+11. Examine with ``strace -C`` differences between the two binaries

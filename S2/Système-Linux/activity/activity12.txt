@@ -1,0 +1,11 @@
+Storage part 1
+
+1. Create a disk image for testing purpose
+2. Attach it as a loop device
+3. Inspect block devices
+4. Partition disk with fdisk
+5. Format partition 1 with ext4 fs
+6. Mount the fs
+7. Inspect superblock
+8. View MBR/GPT structure
+9. Create file an inspect inode

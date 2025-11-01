@@ -1,0 +1,23 @@
+1. Open a terminal and identify your linux distribution and kernel version
+
+2. Identify your peripherals
+
+3. Check your memory usage and hard drive usage
+
+4. Use strace to analyze simple ``ls`` command
+
+6. Write a simple C program that will perform a print on the console and make a write system call. Compile and verify it executes correctly.
+
+7. Trace program execution with ``strace``
+
+8. Export the trace ``strace`` and analyze it
+
+9. Write another simple C program that uses the ``getpid`` syscall.
+
+11. Trace program execution with ``strace``
+
+12. Filter the syscall getpid only using ``strace``
+
+13. Filter the trace to get rid of ``pread64`` syscalls
+
+14. Use ``strace`` to count the number of syscalls made by the program.

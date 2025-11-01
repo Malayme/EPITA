@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# Scrip permettant de vérifier si un fichier existe dans le répertoire courant
 
 if [ -e "test.txt" ]; then
 

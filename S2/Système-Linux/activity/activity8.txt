@@ -1,0 +1,21 @@
+OOM killer, ALSR
+
+1. Simulate OOM and observe the OOM Killer in action
+
+2. Test the demo fork / cow example
+
+3. Check if ALSR is running
+
+4. Check if KSM is running
+
+5. Create a simple program printing memory address of main. Execute the program multiple times.
+
+6. Use GDB, observe entry point and set a breakpoint to main.
+
+   6.2. Observe address of main through GDB.
+
+   6.3. Observe breakpoint address.
+
+7. Out of curiosity, use GDB disassembly function to get a deeper view on what is happening. Can you find out what is this 'difference'
+
+8. Observe entry point again. Can you relate what you see on the screen and the previous values?

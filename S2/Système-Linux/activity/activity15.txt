@@ -1,0 +1,42 @@
+Threads
+
+1. Complete this code with the main function creating the threads.
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <unistd.h>
+
+#define RED  "\x1B[31m"
+#define BLUE  "\x1B[34m"
+
+int c = 0;
+
+void* fnC(void* arg)
+{
+    int i;
+    int thread_no = *((int *)arg);
+
+    for(i=0;i<1000;i++)
+    {
+        c++;
+
+        if (thread_no)
+            printf(" %s%d", BLUE, c);
+        else
+            printf(" %s%d", RED, c);
+    }
+
+    pthread_exit(NULL);
+}
+
+
+int main(void)
+{
+
+}
+
+2. Execute the completed example provided, what is the issue?
+
+3. Implement a mutex to solve the issue
+
+4. Implement a variant with the atomic operations solution

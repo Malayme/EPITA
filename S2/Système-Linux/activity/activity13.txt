@@ -1,0 +1,7 @@
+Storage
+
+1. Based on last mounted loop device, use debugfs
+2. Inspect directory structure and inodes
+3. Create hard link and symbolic links, check inodes
+4. Inspect inode metada using stat. Observe timestamps. What are access/modify/change/birth.
+5. Clean unmount

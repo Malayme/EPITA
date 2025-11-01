@@ -1,0 +1,10 @@
+Storage 3
+
+1. Highlight VFS abstraction with strace
+2. Navigate procfs
+3. Create a simple program in C that read a file, strace it.
+4. Create a simple program in C that write to file using file descriptors (write to 2 different files in the program)
+
+5. Observe strace, identify the file descriptor numbers, what can you say about it.
+
+6. Use lsof to view opened file by the process

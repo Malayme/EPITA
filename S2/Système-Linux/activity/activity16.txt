@@ -1,0 +1,86 @@
+Threads
+
+1. Implement a semaphore based solution to the race condition on the code provided previously.
+
+2. Complete this code, lock() and unlock() functions
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <unistd.h>
+#include <sched.h>
+
+#define RED  "\x1B[31m"
+#define BLUE  "\x1B[34m"
+
+int c = 0;
+
+int turn = 0;
+int flag[2] = {0, 0};
+
+void lock(int me)
+{
+    int other = 1-me;
+
+    // Here: Indicate that this thread wants to enter
+    // Here: Give turn to the other thread
+    // Here: Wait until the other thread releases its flag
+}
+
+void unlock(int me)
+{
+    // Here: release the lock
+}
+
+void* fnC(void* arg)
+{
+    int i;
+    int thread_no = *((int *)arg);
+
+    for(i=0;i<1000;i++)
+    {
+        lock(thread_no);
+        c++;
+        unlock(thread_no);
+
+        if (thread_no)
+            printf(" %s%d", BLUE, c);
+        else
+            printf(" %s%d", RED, c);
+    }
+
+    pthread_exit(NULL);
+}
+
+
+int main(void)
+{
+    int rt;
+    pthread_t th0, th1;
+    int thread0 = 0;
+    int thread1 = 1;
+
+    /* Create two threads */
+    if( (rt=pthread_create( &th0, NULL, fnC, &thread0)) )
+    {
+        printf("Thread creation failed: %d\n", rt);
+        exit(EXIT_FAILURE);
+    }
+    if( (rt=pthread_create( &th1, NULL, fnC, &thread1)) )
+    {
+        printf("Thread creation failed: %d\n", rt);
+        exit(EXIT_FAILURE);
+    }
+
+    /* Wait for threads to finish */
+    pthread_join( th0, NULL);
+    pthread_join( th1, NULL);
+
+    printf("\n");
+
+    return 0;
+}
+
+4. Compile this example without and with -O2 optimizations
+
+5. Implement a memory barrier to prevent the above scenario

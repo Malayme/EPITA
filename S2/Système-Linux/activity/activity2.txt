@@ -1,0 +1,19 @@
+**Activity #2 Interrupts**
+
+1. Identify your main network card (NIC)
+
+2. Look in realtime the interrupts related to your NIC
+
+3. What could be the result of excessive network traffic?
+
+5. Start a simple UDP server (use netcat, or create one simple server in C, or other...)
+
+6. Check that the server is properly listening using standard linux command
+
+7. Find out what is the process ID (PID) of your server
+
+8. Get ``strace`` running against the process in another window
+
+9. Get real-time interrupts stats running in another window
+
+10. Connect to your server using a well known linux tool, you can also try to stress it, but the effects may not be really visible.

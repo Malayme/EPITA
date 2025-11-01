@@ -1,0 +1,16 @@
+Supp log
+# Veuillez saisir le message de validation pour vos modifications. Les lignes
+# commençant par '#' seront ignorées, et un message vide abandonne la validation.
+#
+# Sur la branche main
+# Votre branche est à jour avec 'origin/main'.
+#
+# Modifications qui seront validées :
+#	supprimé :        phishing/log.txt
+#
+# Fichiers non suivis:
+#	../.DS_Store
+#	../TP2/
+#	Attack-AI/
+#	../cours/Attaques_IA/
+#

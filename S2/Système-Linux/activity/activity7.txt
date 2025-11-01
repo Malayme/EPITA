@@ -1,0 +1,7 @@
+Malloc & Others
+
+1. Write a simple C program that uses malloc and free.
+
+2. Trace execution with strace, observe memory related tasks
+
+3. Use ltrace. What can you find out?

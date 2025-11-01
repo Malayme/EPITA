@@ -1,0 +1,15 @@
+Page, swap...
+
+1. Page table and 4-level paging in x86-64 (work with 4KiB page size).
+
+   1.1 Make calculation of page table size for a single-level page table
+
+   1.2 Make same calculation for a 4-level paging system
+
+2. How to check page size
+
+3. How to check if swapping is occurring?
+
+4. Using top or htop observe on-demand paging
+
+5. Use a python script to allocate memory and monitor memory usage with top

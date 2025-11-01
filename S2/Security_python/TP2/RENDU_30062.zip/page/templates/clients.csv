@@ -1,0 +1,3 @@
+commande_id,destinataires,adresse,phishing_url
+12345,Dupond et Dupont,123 Rue Fictive,https://example.com/phishing
+67890,Jean Dupuis,456 Avenue Imaginaire,https://example.com/phishing

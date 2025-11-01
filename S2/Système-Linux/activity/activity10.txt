@@ -1,0 +1,9 @@
+IPC
+
+1. Create and use a basic named pipe from the shell
+
+2. Create a simple program that use a pipe to communicate between two processes.
+
+3. Trace execution.
+
+4. Display unix socket information on your system
