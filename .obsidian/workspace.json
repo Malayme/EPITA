@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e30ad1f7b21233b6",
+        "id": "cd9d9af7b2eb46da",
         "type": "tabs",
         "children": [
           {
-            "id": "996f2eb8a31c52ec",
+            "id": "56ca5fd986247d84",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "S3/graphes-et-matrices/Plus-court-Chemin/Problème du plus court chemin (PCCH).md",
+                "file": "S3/Forensic/Cours 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Problème du plus court chemin (PCCH)"
+              "title": "Cours 1"
             }
           }
         ]
@@ -40,8 +40,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
+                "sortOrder": "alphabetical"
               },
               "icon": "lucide-folder-closed",
               "title": "Explorateur de fichiers"
@@ -78,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "d1b22b40725e9023",
@@ -143,13 +141,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "S3/graphes-et-matrices/Plus-court-Chemin/Problème du plus court chemin (PCCH).md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
+                "file": "S3/Forensic/Cours 1.md"
               },
               "icon": "lucide-list",
-              "title": "Plan de Problème du plus court chemin (PCCH)"
+              "title": "Plan de Cours 1"
             }
           }
         ],
@@ -167,16 +162,17 @@
       "canvas:Créer une nouvelle toile": false,
       "daily-notes:Ouvrir la note quotidienne": false,
       "templates:Insérer le modèle": false,
-      "command-palette:Ouvrir la palette de commandes": false,
-      "bases:Create new base": false
+      "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "996f2eb8a31c52ec",
+  "active": "56ca5fd986247d84",
   "lastOpenFiles": [
+    "S3/Forensic/Cours 1.md",
+    "S3/graphes-et-matrices/Plus-court-Chemin/Problème du plus court chemin (PCCH).md",
+    "S3/Forensic",
     "S3/graphes-et-matrices/code/Bellman.c",
     "S3/graphes-et-matrices/Plus-court-Chemin/Schéma2.canvas",
     "S3/graphes-et-matrices/Plus-court-Chemin/Schéma1.canvas",
-    "S3/graphes-et-matrices/Plus-court-Chemin/Problème du plus court chemin (PCCH).md",
     "Pasted image 20251104102036.png",
     "EPITA/Bienvenue.md",
     "S3/graphes-et-matrices/Plus-court-Chemin",
