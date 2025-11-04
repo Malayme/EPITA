@@ -45,3 +45,48 @@ L'==ordre suffixe inverse== est un ordre topologique (si le graphe ne contient p
 
 __Principe de l'algorithme de Bellman__.
 L'algorithme de Bellman procède à un marquage des sommets: une marque $\lambda(j)$ st calculée durant l'algorithme pour chaque sommet $j$. A la fin de l'algorithme $\lambda(j)$ contient le poids d'un PCCH de $i_0$ vers $j$.
+
+On considère que lordre (1,2, ..., n) est un cercle topologique.
+Bellman suit alors les étapes suivantes:
+- on marque le sommet 1 avec $\lambda(1) = 0$ .
+- A l'itération $j$, on dértermine la marque de sommet $j$ avec : ==$\lambda(j) = min \lambda(i) + w(i, j) i \in N^- (j)$
+- A la fin l'algorithme, $\lambda(j)$ contient le pods d'un PCCH de 1 vers $j$. 
+
+$\lambda(4) = min (\lambda(1) + w(1, 3); \lambda(2) + w(2, 4); \lambda(3)+ w(3, 4))$ 
+$\lambda(4) = 4$ 
+
+| sommet | $\lambda(.)$ | parent (.) |
+| ------ | ------------ | ---------- |
+| 1      | 0            | /          |
+| 4      | 1            | 1          |
+| 7      | 4            | 4          |
+| 3      | 2            | 1          |
+| 2      | 3            | 3          |
+| 5      | 2            | 2          |
+| 6      | 6            | 2          |
+| 8      | 10           | 6          |
+PCCH (1, 3, 2, 6, 8)
+
+Exo : 
+
+1) Déterminer ordre topologique
+2) Bellman
+
+1 - (1, 2, 3, 4, 5, 6, 7,  8, 9)
+2 - 
+
+| sommet | $\lambda(.)$ | parent (.) |
+| ------ | ------------ | ---------- |
+| 1      | 0            | /          |
+| 2      | 2            | 1          |
+| 3      | 9            | 2          |
+| 4      | -1           | 1          |
+| 5      | 7            | 2          |
+| 6      | 4            | 5          |
+| 7      | 4            | 4          |
+| 8      | 7            | 7          |
+| 9      | 6            | 6          |
+(1, 2, 5, 6, 9)
+
+Complexité : ordre topologique par DFS : $O(n+n)$
+marquage : $O(\sum_{i \in X} d(i)) = O(m) => O(n+m)+O(m)= O(n+m)$   

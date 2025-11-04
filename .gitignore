@@ -1,3 +1,4 @@
 *.ova
 *.gguf
 node_modules/
+.idea/
