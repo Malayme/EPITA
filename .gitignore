@@ -2,3 +2,4 @@
 *.gguf
 node_modules/
 .idea/
+.obsidian
