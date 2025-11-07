@@ -8,17 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "56ca5fd986247d84",
+            "id": "989da8a640c346b1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "S3/Forensic/Cours 1.md",
-                "mode": "source",
-                "source": false
+                "file": "S3/Reseau/Chapitre 4- Concepts de Sécurité LAN.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Cours 1"
+              "icon": "lucide-file-text",
+              "title": "Chapitre 4- Concepts de Sécurité LAN"
             }
           }
         ]
@@ -40,7 +38,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Explorateur de fichiers"
@@ -77,7 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "d1b22b40725e9023",
@@ -157,6 +156,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Ouvrir le sélecteur rapide": false,
       "graph:Ouvrir la vue graphique": false,
       "canvas:Créer une nouvelle toile": false,
@@ -165,8 +165,14 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "56ca5fd986247d84",
+  "active": "63e05fd2028d55c8",
   "lastOpenFiles": [
+    "S3/Sans titre.md",
+    "S3/Electronique/Sans titre.md",
+    "S3/Electronique",
+    "S3/Reseau/Chapitre 4- Concepts de Sécurité LAN.pdf",
+    "S3/Reseau/Cours 4.md",
+    "S3/Reseau/Chapitre 4- Concepts de Sécurité LAN.pdf:Zone.Identifier",
     "S3/Forensic/Cours 1.md",
     "S3/graphes-et-matrices/Plus-court-Chemin/Problème du plus court chemin (PCCH).md",
     "S3/Forensic",
