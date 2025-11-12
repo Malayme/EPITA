@@ -5,3 +5,6 @@ node_modules/
 .obsidian
 S3/Java/code/
 .obsidian
+.DS_Store
+S3/.DS_Store
+.DS_Store
