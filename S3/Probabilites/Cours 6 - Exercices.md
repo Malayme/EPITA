@@ -61,5 +61,25 @@ donc A, B, C sont 2 a 2 inde
 
 Exercice 5 : On considère un lot de pièces métalliques rectangulaires. Elles sont destinées à être assemblées ensembles. Toutefois certaines sont mal proportionnées et ne sont donc pas utilisables. Plus précisément : • 3% sont inutilisables car trop longues. • 5% sont inutilisables car trop larges. • 2% sont inutilisables car à le fois trop longues et trop larges. On prend une pièce au hasard, quelle est la probabilité quelle soit utilisable ?
 
+On note A : 'piece trop longue', B : 'piece trop large'
+On a : $P(A) = \frac{3}{100}, P(B)=\frac{5}{100}$
+$P(A \cap B)=\frac{2}{100}$
+On cherche : $P(\overline{A \cup B})$
+On a : $P(\overline{A \cup B})=1- P(A \cup B)$
+             $= 1-(P(A)+P(B)-P(A\cap B))$
+             $= \frac{94}{100}$
 
+Exercice 6 : Une urne contient n boules dont b boules blanches et r boules rouges. On tire une première boule, on la remet dans l’urne et on ajoute une seconde boule de la même couleur dans l’urne. On tire ensuite une seconde boule. 1. Décrire l’univers Ω de cette expérience. 2. Quelle est la probabilité de tirer deux boules blanches ? 3. Quelle est la probabilité que la seconde boule tirée soit blanche ? 4. Sachant que la seconde boule tirée est blanche, quelle est la probabilité que la première boule tirée est été blanche ?
 
+1. $\Omega=${$(B, B), (R,R), (R, B), (B,R)$}
+2. On note : $B_1$ : "boule 1 blanche"
+$B_2$ : "boule 2 blanche"
+alors $P(B_1 \cap B_2)= \frac{b}{n} \frac{b+1}{n+1} = \frac{b^2 + b}{n^2 +n}$
+3. $P(B_2)=P((B_2 \cap B_1) \cup (B_2 \cap \overline{B_1}))$
+        $=P(B_2 \cap B_1) + P(B_2 \cap \overline{B_1})$
+        $= \frac{b^2 +b}{n^2 + n} + \frac{r}{n} \frac{b}{n+1}$ 
+4. On cherche $P(B_1 | B_2)$
+$P(B_1 | B_2)= \frac{P(B_1 \cap B_2)}{P(B_2)}$
+     $=\frac{\frac{b^{2}+b}{n^{2}+n}}{\frac{b^{2}+(1+r)b}{n^{2}+n}}$
+       $=\frac{b+1}{b+1+r}$
+       $=\frac{b+1}{n+1}$    
