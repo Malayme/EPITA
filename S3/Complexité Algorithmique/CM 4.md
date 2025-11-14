@@ -48,4 +48,20 @@ int algo1(int n){
     $=\Theta(1)+\Theta(n)+\Theta(n^2)+O(n^3)$
      $=\Theta(n^2)+O(n^3)$
      $=O(n^3)$
-     
+
+```C
+int binarySearch(int tab[], int n, int value, int first, int last){
+	if(first>last){
+		return 0;
+	}else{
+		int middle=(first+last)/2; //division entière
+		if(tab[middle] == value){
+			return 1;
+		}else if(value<tab[middle]){
+			return binarySearch(tab, n, value, first, middle-1);
+		}else{
+			return binarySearch(tab, n, value, middle+1, last);
+		}
+	}
+}
+```
