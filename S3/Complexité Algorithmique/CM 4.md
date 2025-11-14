@@ -82,3 +82,17 @@ Nombre d'appels à binarySearch()
 On définit la suite $S(n)$ telle que $S(n)$ le nombre d'appels à binarySearch() pour une instance de taille n.
 On détermine la relation de récurrence vérifiée par $S(n)$.
 $S(n)=1 + S(\frac{n}{2})$ (partie entière).
+
+Par substitution: 
+$S(n)=1+S(\frac{n}{2})=1+(1+S(\frac{n}{2^2}))$
+    $=2+S(\frac{n}{2^2})=2+(1+S(\frac{n}{2^3}))$
+    $=3+S(\frac{n}{2^3})$
+    $=k+S(\frac{n}{2^k})$
+
+La substitution s'arrête pour le plus petit entier $k$ tel que $\frac{n}{2^k}<0$
+On cherche donc $k \in \mathbf{N} / 2^{k-1} <= n < 2^k$
+donc : $e^{(k-1).ln(2)}<=n<=e^{k.ln(2)}$
+$(k-1).ln(2) <= ln(n)<k.ln(2)$
+$(k-1)<=\frac{ln(n)}{ln(2)}<=k$
+$k-1<=log(n)<k$
+=>$k=log_2(n)+1$ (partie entière de log(n))
