@@ -89,6 +89,13 @@ $S(n)=1+S(\frac{n}{2})=1+(1+S(\frac{n}{2^2}))$
     $=3+S(\frac{n}{2^3})$
     $=k+S(\frac{n}{2^k})$
 
+Rappel :
+$a^b=e^{b.ln(a)}$
+$ln()=e()^-1$
+$e^{ln(x)} =x$
+$a^b=e^{ln(a^b)}$
+$a^b=e^{b.ln(a)}$
+
 La substitution s'arrête pour le plus petit entier $k$ tel que $\frac{n}{2^k}<0$
 On cherche donc $k \in \mathbf{N} / 2^{k-1} <= n < 2^k$
 donc : $e^{(k-1).ln(2)}<=n<=e^{k.ln(2)}$
@@ -96,3 +103,30 @@ $(k-1).ln(2) <= ln(n)<k.ln(2)$
 $(k-1)<=\frac{ln(n)}{ln(2)}<=k$
 $k-1<=log(n)<k$
 =>$k=log_2(n)+1$ (partie entière de log(n))
+
+$S(n)=log_2(n)+1$
+La complexité de l'algorithme est 10.
+=> $O(log(n))$
+
+```C
+int algo1(int n){
+	if(n==0||n==1){             // 2 tests, 1 test logique
+		return 1;               // pas compté
+	}else{
+		return 1+algo1(n/2);    // 2 op arithmétique, 1 appel, 1 return
+	}
+}
+````
+
+Nombre d'opérations à chaque appel :
+7 opérations.
+On définit la suite $S(n)$ telle que $S(n)$ le nombre d'appels à algo1() pour une instance de taille n.
+$S(n)=1 + S(\frac{n}{2})$
+$S(n)=1 + S(\frac{n}{2^k})$
+L'algorithme s'arrête pour $n=0$ ou $n=1$
+La substitution s'arrête pour : $\frac{n}{n^k}<=1$
+=> $n <= 2^k$
+=>$\frac{ln(n)}{ln(2)} <= k$
+=> $log_2(n)<=k$
+=>k=log_2(n)+1
+Donc : $O(log(n))$
