@@ -54,7 +54,7 @@ int binarySearch(int tab[], int n, int value, int first, int last){
 	if(first>last){
 		return 0;
 	}else{
-		int middle=(first+last)/2; //division entière
+		int middle=(first+last)/2;       //division entière
 		if(tab[middle] == value){
 			return 1;
 		}else if(value<tab[middle]){
@@ -65,3 +65,20 @@ int binarySearch(int tab[], int n, int value, int first, int last){
 	}
 }
 ```
+
+Nombre d'opérations pour un appel de binarySearch():
+- l.2: 1 test,
+- l.3: 1 return (pas au pire cas)
+- l.5: 1 addition, 1 division, 1 déclaration, 1 affectation
+- l.6: 1 test
+- l.7: 1 return (qui ne correspond pas au pire cas)
+- l.8: 1 test,
+- l.9, 11: 1 opération arithmétique, 1 appel, 1 return
+------------------
+Au total, 10 opérations  élémentaires pour chaque appel
+
+Nombre d'appels à binarySearch()
+
+On définit la suite $S(n)$ telle que $S(n)$ le nombre d'appels à binarySearch() pour une instance de taille n.
+On détermine la relation de récurrence vérifiée par $S(n)$.
+$S(n)=1 + S(\frac{n}{2})$ (partie entière).
