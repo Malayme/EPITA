@@ -1,0 +1,2 @@
+1) Charge : Sonia Darmont (demandeuse); Acte ou Fait : Acte; Mode(s) de preuve : ecrit car voiture >> 1500e, Acte authentique (si signe) ou Acte sous signature (seing) privée
+2) Charge : Proprietaire, M.Dufour; Acte ou Fait : Acte; Mode de preuve : ecrit et acte authentique
