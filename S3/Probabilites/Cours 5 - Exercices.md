@@ -1,4 +1,4 @@
-qExercice 1 :
+Exercice 1 :
 1. Combien existe-t-il de nombre entier s’écrivant avec exactement k chiffres significatifs en base 2 ? Remarque : Lorsqu’on lit les nombres de gauche à droite, un chiffre significatif est un chiffre placé à droite du premier chiffre non nul. 
 Il existe : $2^{k-1}$ possibilités
 
