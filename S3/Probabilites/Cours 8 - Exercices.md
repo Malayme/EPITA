@@ -25,3 +25,49 @@ Exercice 4
 On jette deux fois un dé équilibré à 6 faces, on note D1 et D2 les résultats des deux lancers. Soient X = D1 + D2 et Y = D1 − D2. 
 1. Rappeler la loi de D1. Calculer son espérance et sa variance. En déduire les espérances et les variances de X et Y . 
 2. Calculer E(D1D2) .
+
+1/ $D_1$ ~ $U([=1,6=])$
+$\mathbf{E}(D_1)=\frac{1+2+3+4+5+6}{6}=3,5$
+$Var(D_1)=\frac{6^2-1}{12}=\frac{35}{12}$
+
+$E(X)=E(D_1)+ D_2)$
+$=E(D_1)+E(D_2)$
+$=E(D_1)+E(D_1)$
+$=3,5 + 3,5$
+$=7$
+$E(Y)=E(D_1)-E(D_2)=0$
+
+2/ Soient X, Y deux v.a indé. et intégrables alors : $E(XY)= E(X)E(Y)$
+$D_1$ et $D_2$ sont indé. car elles représentent deux lancers de dés indé.
+Elles sont intégrables car finies.
+Ainsi $E(D_1D_2)= E(D_1)E(D_2)$
+         $=E(D_1)^2$
+         $=12$
+
+Exercice 5
+On lance 3600 fois un dé équilibré à 6 faces. On note S le nombre de 1 obtenus. 
+1. Calculer P(480 < S < 720) .
+2. Sans vous aidez de la question 1, minorer P(480 < S < 720) . 
+3. Trouver une valeur u ∈ {0, ..., 3600} telle que P(S ≥ u) ≤ 0, 05 
+
+1/ S ~ Bin(3600, $\frac{1}{6}$)
+P(480 < S < 720)=$P(\cup^{719}_{i=481} S=i)$
+             $= \sum^{719}_{i=481} P(S=i)$
+            $=\sum^{719}_{i=481} \binom{n}{i}(1-\frac{1}{6}^{n-2} \frac{1}{6})$
+On n'aboutit pas.
+
+2/ On a E(S)=600
+Var(S)=500
+
+On remarque 600 - 120 = 480
+600 + 120 = 720
+
+De plus P(480<S<720)
+=P(| S - E(S) |  < 120)
+
+On a P(| S - E(S) | > 120) <= $\frac{500}{120^2}=\frac{4}{144}$
+
+alors P(| S-E(S)| < 120) = 1 - P(|S-E(S)| > 120) - P(|S-E(S)| = 120) >= 1-P(|S - E(S)| > 120)
+
+$>= 1- \frac{5}{144}$
+$>= \frac{139}{144}$
