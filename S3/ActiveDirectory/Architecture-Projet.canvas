@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"112821e1e5b80fbb","x":-67,"y":0,"width":290,"height":200,"type":"group","label":"Paris"},
+		{"id":"7e9a8eaee9b27261","x":-360,"y":-380,"width":290,"height":190,"type":"group","label":"New York"},
+		{"id":"ed32cd43823a1fcd","type":"text","text":"DC Paris 10.69.42.248\nfra.company.corp","x":-47,"y":20,"width":250,"height":60},
+		{"id":"3958d39eba7d9d30","type":"text","text":"DC New York 10.69.42.250\ncompany.corp","x":-340,"y":-360,"width":250,"height":60},
+		{"id":"072b966a8e3f8401","type":"text","text":"Client1 10.69.42.249","x":-340,"y":-270,"width":250,"height":60},
+		{"id":"32219ca67791d593","type":"text","text":"Client-Paris-1 10.69.42.247","x":-47,"y":120,"width":250,"height":60},
+		{"id":"eb70523d9d34a5b2","type":"text","text":"RODC New York 10.69.42.252","x":-500,"y":-80,"width":250,"height":60},
+		{"id":"3c621a16252de6b4","type":"text","text":"DC presta 10.69.42.200\nprestataire.ext","x":203,"y":-300,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"9959e94e05411dda","fromNode":"3958d39eba7d9d30","fromSide":"bottom","toNode":"072b966a8e3f8401","toSide":"top"},
+		{"id":"4a6261a9a2db3d2b","fromNode":"3958d39eba7d9d30","fromSide":"bottom","toNode":"072b966a8e3f8401","toSide":"top"},
+		{"id":"e2c356f1f2f6bf33","fromNode":"ed32cd43823a1fcd","fromSide":"bottom","toNode":"32219ca67791d593","toSide":"top"},
+		{"id":"b5ebf72901b601ef","fromNode":"7e9a8eaee9b27261","fromSide":"bottom","toNode":"eb70523d9d34a5b2","toSide":"top"},
+		{"id":"3c6452285d854a7a","fromNode":"7e9a8eaee9b27261","fromSide":"bottom","toNode":"112821e1e5b80fbb","toSide":"top"},
+		{"id":"a0b3efd661f71963","fromNode":"7e9a8eaee9b27261","fromSide":"right","toNode":"3c621a16252de6b4","toSide":"left"},
+		{"id":"5e196f3267c10188","fromNode":"3c621a16252de6b4","fromSide":"left","toNode":"7e9a8eaee9b27261","toSide":"right"}
+	]
+}
